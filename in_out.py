@@ -1,30 +1,29 @@
-# import cv2
+ # import cv2
 # from datetime import datetime
 # def in_out():
 #     pass
 
 import cv2
 from datetime import datetime
+
 def in_out():
     cap = cv2.VideoCapture(0)
-
 
     right, left = "", ""
 
     while True:
         _, frame1 = cap.read()
         frame1 = cv2.flip(frame1, 1)
+
         _, frame2 = cap.read()
         frame2 = cv2.flip(frame2, 1)
 
-        diff = cv2.absdiff(frame2, frame1)
-        
+        diff = cv2.absdiff(frame2, frame1)        
         diff = cv2.blur(diff, (5,5))
-        
+    
         gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
         
-        _, threshd = cv2.threshold(gray, 40, 255, cv2.THRESH_BINARY)
-        
+        _, threshd = cv2.threshold(gray, 40, 255, cv2.THRESH_BINARY)    
         contr, _ = cv2.findContours(threshd, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         
         x = 300
@@ -49,7 +48,7 @@ def in_out():
                     right, left = "", ""
                     # cv2.imwrite(f"visitors/in/{datetime.now().strftime('%-y-%-m-%-d-%H:%M:%S')}.jpg", frame1)
                     # img.save(f"visitors/in/{datetime.now().strftime('%-y-%-m-%-d-%H:%M:%S')}.png")
-                    cv2.imwrite(f"visitors/in/{datetime.now().strftime('%m-%d-%Y %H:%M:%S')}.jpg", frame1)
+                    cv2.imwrite(f"in/{datetime.now().strftime('%m-%d-%Y %H:%M:%S')}.jpg", frame1)
             
         elif left:
                 if x > 5000:
@@ -57,7 +56,7 @@ def in_out():
                     x = 5000
                     right, left = "", ""
                     # cv2.imwrite(f"visitors/out/{datetime.now().strftime('%-y-%-m-%-d-%H:%M:%S')}.jpg", frame1)
-                    cv2.imwrite(f"visitors/out/{datetime.now().strftime('%m-%d-%Y %H:%M:%S')}.jpg", frame1)
+                    cv2.imwrite(f"out/{datetime.now().strftime('%m-%d-%Y %H:%M:%S')}.jpg", frame1)
             
 
 
@@ -93,3 +92,6 @@ def in_out():
             cap.release()
             cv2.destroyAllWindows()
             break
+
+
+

@@ -47,6 +47,9 @@ class App:
         self.btn_reset = tk.Button(self.window, text="Reset", width= 50, command=self.reset, borderwidth=3, relief="raised", padx=5, pady=10)
         self.btn_reset.pack(anchor=tk.CENTER, expand= True)
 
+        self.btn_exit = tk.Button(self.window, text="exit", width= 50, command=self.window.quit, borderwidth=3, relief="raised", padx=5, pady=10)
+        self.btn_exit.pack(anchor=tk.CENTER, expand= True)
+
         self.class_label = tk.Label(self.window, text= "CLASS")
         self.class_label.config(font=("sans serif", 20))
         self.class_label.pack(anchor=tk.CENTER, expand= True)

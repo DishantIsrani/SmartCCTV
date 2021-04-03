@@ -37,7 +37,7 @@ while cam.isOpened():
         winsound.Beep(500, 200)
         # winsound.PlaySound()
 
-    if cv2.waitKey(10) == ord(27):
+    if cv2.waitKey(10) == 27:
         break
 
     cv2.imshow("Runtime Terror's security camera", frame1)
