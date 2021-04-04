@@ -2,7 +2,7 @@
 
 Run Main.py
 
-requirements -
+#Requirements -
 Opencv - pip install opencv-pyhton
 NumPy - pip install numpy
 Sklearn - pip install scikit-learn
