@@ -13,4 +13,4 @@ Pillow - pip install pillow <br>
 1 - coco.names (available in the repository) <br>
 2 - yolov3.cgf (available in the repository) <br>
 3 - yolov3.weights (large file) <br>
-link to download yolov3 weights - https://pjreddie.com/media/files/yolov3.weights 
+link to download yolov3.weights - https://pjreddie.com/media/files/yolov3.weights 
