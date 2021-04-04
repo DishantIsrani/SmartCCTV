@@ -3,9 +3,6 @@ import tkinter.font as font
 from tkinter import simpledialog
 from in_out import in_out
 from RTD import rtd 
-# import os
-# import camera
-# import model
 from app import App
 # from classifier import classifier
 from motion import noise
