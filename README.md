@@ -3,7 +3,7 @@
 Run Main.py
 
 #Requirements -
-Opencv - pip install opencv-pyhton
+Opencv - pip install opencv-python <br>
 NumPy - pip install numpy
 Sklearn - pip install scikit-learn
 Tkinter - pip install tkinter
