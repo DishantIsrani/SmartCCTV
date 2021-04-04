@@ -67,7 +67,7 @@ def rect_noise():
             cv2.putText(frame1, "NO-MOTION", (10,80), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,255), 2)
 
         cv2.rectangle(frame1, (x1,y1), (x2, y2), (0,0,255), 1)
-        cv2.imshow("esc. to exit", frame1)
+        cv2.imshow("Rectangular tracker", frame1)
 
         if cv2.waitKey(1) == 27:
             cap.release()

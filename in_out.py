@@ -73,7 +73,7 @@ def in_out():
         _, frame1 = cap.read()
 
         if cv2.waitKey(1) == 27:
-            cv2.destroyAllWindows()
+            cv2.destroyAllWindow
             cap.release()
             break
 

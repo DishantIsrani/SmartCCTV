@@ -1,11 +1,6 @@
 import cv2
 import numpy as np 
 
-# def main():
-#     realrtd.RTD(window_title="Runtime Terror camera classifier")
-
-# if __name__ == '__main__': 
-#     realrtd()
 
 def rtd():
     # net = cv2.dnn.readNet('realTimeDetector/yolov3.weights','realTimeDetector/yolov3.cfg')
@@ -66,7 +61,7 @@ def rtd():
             cv2.rectangle(img, (x,y), (x+w, y+h), color, 2)
             cv2.putText(img, label + " " + confidence, (x,y+20), font, 2, (255,255,255), 2)
 
-        cv2.imshow('Image', img)
+        cv2.imshow('RealTimeDetector', img)
         key = cv2.waitKey(1)
         if key == 27:
             break

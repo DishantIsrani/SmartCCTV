@@ -19,7 +19,7 @@ def record():
         out.write(frame)
         
 
-        cv2.imshow("esc. to stop", frame)
+        cv2.imshow("Recording", frame)
 
         if cv2.waitKey(1) == 27:
             cap.release()

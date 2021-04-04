@@ -7,7 +7,7 @@ import camera
 import model
 
 class App:
-    def __init__(self, window=tk.Tk(), window_title="Dishant's camera classifier"):
+    def __init__(self, window=tk.Tk(), window_title="Runtime Terror's camera classifier"):
         self.window = window
         self.window_title = window_title
         self.window.configure(bg='#577399')
