@@ -12,7 +12,7 @@ from PIL import Image, ImageTk
 
 
 window = tk.Toplevel()
-window.title("Smart cctv")
+window.title("Group 10's Smart cctv")
 window.iconphoto(False, ImageTk.PhotoImage(file='mn.png'))
 window.geometry('1060x760')
 window.minsize(900,700)

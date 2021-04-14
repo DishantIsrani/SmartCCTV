@@ -44,7 +44,7 @@ def noise():
         if cv2.waitKey(10) == ord('q'):
             break
 
-        cv2.imshow("Runtime Terror's security camera", frame1)
+        cv2.imshow("Group 10's security camera", frame1)
         
     print("code completed")
         
