@@ -22,10 +22,6 @@ window.configure(bg='#577399')
 frame1 = tk.Frame(window)
 frame1.configure(bg='#577399')
 
-# class Main:
-#     def __init__(self):
-#         frame1 = tk.frame(window)
-
 label_title = tk.Label(frame1, text="Smart cctv Camera")
 label_font = font.Font(size=35, weight='bold',family='Helvetica')
 label_title['font'] = label_font
