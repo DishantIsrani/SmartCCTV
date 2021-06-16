@@ -8,6 +8,8 @@ NumPy - pip install numpy <br>
 Sklearn - pip install scikit-learn <br>
 Tkinter - pip install tkinter <br>
 Pillow - pip install pillow <br>
+Face_recognition - Install cmake, visual studio, dlib, pip install Face_recognition. (refer online how to install face-recognition module for better understanding).
+
 
 3 Yolov3 Algorithm files (RTD) <br>
 1 - coco.names (available in the repository) <br>
