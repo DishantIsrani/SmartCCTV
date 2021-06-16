@@ -4,7 +4,7 @@
 # def rect_noise(self):
 #     pass
 
-
+import winsound
 
 
 import cv2 
@@ -62,6 +62,7 @@ def rect_noise():
             x,y,w,h = cv2.boundingRect(max_cnt)
             cv2.rectangle(frame1, (x+x1, y+y1), (x+w+x1, y+h+y1), (0,255,0), 2)
             cv2.putText(frame1, "MOTION", (10,80), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,255,0), 2)
+            winsound.Beep(500, 200)
 
         else:
             cv2.putText(frame1, "NO-MOTION", (10,80), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,255), 2)

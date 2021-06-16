@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-
+import winsound
 
 def in_out():
     cap = cv2.VideoCapture(0)
@@ -40,12 +40,13 @@ def in_out():
             if x < 450 and x > 200 and not(center):
                 print(x," x has been set to it")
                 center = True
+                winsound.Beep(500, 200)
 
             elif x > 500:
                 if center:
                     print("motion to left taken place")
-                    mask = np.zeros((200, 400))
-                    cv2.putText(mask, "to left", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (255), 3)
+                    mask = np.zeros((200,450))
+                    cv2.putText(mask, "Exit-Left", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (255), 3)
                     left = False
                     center = False
                 else:
@@ -58,8 +59,8 @@ def in_out():
             if x < 100:
                 if center:
                     print("motion done to the right side")
-                    mask = np.zeros((200, 400))
-                    cv2.putText(mask, "to right", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (255), 3)
+                    mask = np.zeros((200, 450))
+                    cv2.putText(mask, "Enter-Right", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (255), 3)
                     right = False
                     center = False
 

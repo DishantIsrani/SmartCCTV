@@ -10,8 +10,8 @@ def rtd():
     with open('coco.names','r') as f:
         classes = f.read().splitlines()
 
-    # cap = cv2.VideoCapture('realTimeDetector/mumbaiTraffic.mp4')
-    cap = cv2.VideoCapture('mumbaiTraffic.mp4')
+    # cap = cv2.VideoCapture('new video.mp4')
+    cap = cv2.VideoCapture('traffic.mp4')
     # cap = cv2.VideoCapture(0)
     # img = cv2.imread('image.jpg')
 
