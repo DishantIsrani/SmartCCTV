@@ -29,3 +29,6 @@ link to download yolov3.weights - https://pjreddie.com/media/files/yolov3.weight
 ### Code of Conduct 
 
 * To contribute to this repository check here, see [CODE OF CONDUCT](/CODE_OF_CONDUCT.md).
+
+### Author
+* @Author : [Dishant Israni](https://github.com/DishantIsrani/)
